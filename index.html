@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hontec - Developer Workspace Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./logo/logo.png" alt="hontec  logo" height="50px" width="50px" style="margin-left: 10px;">
+        </div>
+        <nav>
+            <ul>
+                <!--- <li><a href="#">Why Hontec?</a></li> --->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technologies-section">Technologies</a></li>
+                <li><a href="#webdev-process-section">Journey</a></li>
+                <li><a href="#plans-section">Pricing</a></li>              
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <a href="#" class="btn">Start Trial</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2><q>Crafting Tomorrow's Technologies!</q></h2>
+                <p><b>Welcome to Hontec</b> – Where Your Vision Becomes Reality.
+                    we transform ideas into stunning, functional websites that engage, inspire, and convert. 
+                    Whether you're a startup looking for a fresh digital presence or an established business 
+                    needing a website revamp, we've got you covered.
+
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn primary">Start Free Trial</a>
+                    <a href="#" class="btn secondary">Request Demo</a>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Explore Our Core Offerings</h2>
+                <div class="services-wrapper">
+                    
+                    <!-- Custom Web Development -->
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="./services pic/web_devs_image.png" alt="Web Development">
+                        </div>
+                        <div class="service-content">
+                            <h3>Custom Web Development</h3>
+                            <p> At Hontec, we understand that your website is often the first impression your audience has of your business. 
+                                That's why we offer custom web development services that go beyond just aesthetics. 
+                                We create fully responsive, user-centric websites that not only look great but also deliver measurable results. 
+                                Our expert team works closely with you to ensure your website reflects your brand's unique identity 
+                                and meets your specific business goals.</p>
+                            <ul>
+                                <!-- <li>Responsive and mobile-first design</li>
+                                <li>SEO-friendly development</li>
+                                <li>Custom features and integrations</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- E-Commerce Solutions -->
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="./services pic/designers-working-internet-store-website.png" alt="E-Commerce Solutions">
+                        </div>
+                        <div class="service-content">
+                            <h3>E-Commerce Solutions</h3>
+                            <p>We empower your business to reach its full potential online with our comprehensive e-commerce solutions.
+                            Whether you're launching a new online store or optimizing an existing one, 
+                            our team of experts is dedicated to creating a seamless shopping experience for your customers. 
+                            We specialize in developing secure, scalable, and user-friendly e-commerce platforms that not only enhance your brand 
+                            but also drive sales and customer satisfaction.</p>
+                            <ul>
+                                <!-- <li>Custom e-commerce platform design</li>
+                                <li>Secure payment gateway integration</li>
+                                <li>Efficient product management</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Website Redesign -->
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="./services pic/website-setup-concept-landing-page.png" alt="Website Redesign">
+                        </div>
+                        <div class="service-content">
+                            <h3>Website Redesign</h3>
+                            <p>We understand that a website is more than just an online presence—it's a powerful tool 
+                            for engaging customers and driving business growth. Our website redesign services are focused on 
+                            revitalizing your site to improve its performance, appearance, and user experience. 
+                            Whether your current website is outdated, slow, or not converting visitors into customers, 
+                            our expert team will work with you to create a fresh, modern design that aligns with 
+                            your brand and business goals.</p>
+                            <!-- <ul>
+                                <li>Modern, user-friendly design</li>
+                                <li>Optimized for speed and performance</li>
+                                <li>Improved SEO and accessibility</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    
+                    <!-- SEO Optimization -->
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="./services pic/seo-analytics-team-concept-illustration.png" alt="SEO Optimization">
+                        </div>
+                        <div class="service-content">
+                            <h3>SEO Optimization</h3>
+                            <p>At Hontec, we believe that a beautiful website is only effective if it can be found by your target audience. 
+                            Our SEO optimization services are designed to enhance your website's visibility on search engines, 
+                            driving more organic traffic and increasing your online presence. 
+                            We use proven strategies and the latest techniques to ensure that your website ranks higher in search results, 
+                            attracts the right audience, and converts visitors into customers.                         
+                            </p>
+                            <!-- <ul>
+                                <li>Comprehensive SEO audits</li>
+                                <li>On-page and off-page optimization</li>
+                                <li>Content creation and strategy</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="technologies-section" class="technologies-section">
+            <div class="container">
+                <h2 class="section-title">The Technologies Behind Our Web Excellence </h2>
+                <div class="tech-tabs">
+                    <button class="tablink active" onclick="openTech(event, 'ProgrammingLanguages')">Programming Languages</button>
+                    <button class="tablink" onclick="openTech(event, 'Databases')">Databases</button>
+                    <button class="tablink" onclick="openTech(event, 'Frontend')">Frontend</button>
+                    <button class="tablink" onclick="openTech(event, 'Backend')">Backend</button>
+                    <button class="tablink" onclick="openTech(event, 'Cloud')">Cloud</button>
+                </div>
+        
+                <div id="ProgrammingLanguages" class="tech-content active">
+                    <!-- Programming Languages Content -->
+                    <div class="tech-box">
+                        <img src="./web tech pics/js.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/c-.png" alt="C++">
+                        <p>C++</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/python.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/php.png" alt="Php">
+                        <p>Php</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/swift.png" alt="Swift">
+                        <p>Swift</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/social.png" alt="Css3">
+                        <p>Css3</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+        
+                <div id="Databases" class="tech-content">
+                    <!-- Databases Content -->
+                    <div class="tech-box">
+                        <img src="./web tech pics/mysql.png" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/pngwing.com.png" alt="MongoDB">
+                        <p>MongoDB</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+        
+                <div id="Frontend" class="tech-content">
+                    <!-- Frontend Content -->
+                    <div class="tech-box">
+                        <img src="./web tech pics/react.png" alt="ReactJS">
+                        <p>ReactJS</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/angular.png" alt="AngularJS">
+                        <p>AngularJS</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/vue.png" alt="VueJS">
+                        <p>VueJS</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+        
+                <div id="Backend" class="tech-content">
+                    <!-- Backend Content -->
+                    <div class="tech-box">
+                        <img src="./web tech pics/node.png" alt="Node.js">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/ruby.png" alt="Ruby">
+                        <p>Ruby</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+        
+                <div id="Cloud" class="tech-content">
+                    <!-- Cloud Content -->
+                    <div class="tech-box">
+                        <img src="./web tech pics/aws.png" alt="AWS" style="width: auto;">
+                        <p>AWS</p>
+                    </div>
+                    <div class="tech-box">
+                        <img src="./web tech pics/Azure.png" alt="Azure">
+                        <p>Azure</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="webdev-process-section" id="webdev-process-section">
+            <div class="process-container">
+                <h2 class="process-section-title"><q>Your Web Development Journey: From Blueprint to Brilliance&#x21</q></h2>
+                <p class="process-section-subtitle">
+                From planning and testing to launch and maintenance, we've shaped a comprehensive step-by-step process that we follow for every website development project.
+                </p>
+
+                <div class="process-tabs-a">
+                    <button class="tablink-a active" onclick="openProcess(event, 'Strategy')">
+                        <i class="fas fa-chart-line"></i> Strategy & Planning
+                    </button>
+                    <button class="tablink-a" onclick="openProcess(event, 'Design')">
+                        <i class="fas fa-pencil-ruler"></i> Design & Documentation
+                    </button>
+                    <button class="tablink-a" onclick="openProcess(event, 'Development')">
+                        <i class="fas fa-code"></i> Development & Launch
+                    </button>
+                </div>
+
+                <div id="Strategy" class="process-content active">
+                    <div class="process-box">
+                        <h3>Strategy & Planning</h3>
+                        <p>
+                        Guided by your business goals, we will develop clear & actionable plans for your digital presence, including user journey and conversion funnels.
+                        </p>
+                     </div>
+                </div>
+
+                <div id="Design" class="process-content">
+                    <div class="process-box">
+                        <h3>Design & Documentation</h3>
+                        <p>
+                        Our design team will create wireframes and visual mockups, ensuring the design aligns with your brand and meets usability standards.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="Development" class="process-content">
+                    <div class="process-box">
+                        <h3>Development & Launch</h3>
+                        <p>
+                        We develop your website using the latest technologies, rigorously test it across devices, and ensure a smooth launch with ongoing support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="web-design-section">
+            <button class="arrow left-arrow">&#8249;</button>
+            <div class="scrollable-container">
+                <div class="portfolio-item">
+                    <img src="./work/02.webp" alt="Amrita Vishwa Vidyapeetham">
+                    <div class="overlay">
+                        <p>Amrita Vishwa Vidyapeetham</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./work/03.webp" alt="Axis Bank | RemitMoney">
+                    <div class="overlay">
+                        <p>Axis Bank | RemitMoney</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./work/08.webp" alt="Market Cube">
+                    <div class="overlay">
+                        <p>Market Cube</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items here -->
+            </div>
+            <button class="arrow right-arrow">&#8250;</button>
+            <div class="web-design-description">
+                <h2>Obsessed with Quality!</h2>
+                <p>Yes, at Hontec, we're obsessed with quality. 
+                We rely on our portfolio to do business and always ensure that each of 
+                our web or mobile deliverable is unique and world class.
+                </p>
+            </div>
+        </section>
+        <section id="plans-section">
+            <h1 id="plans-heading">Our Web Development Plans</h1>
+            <div class="plans">
+                <div class="plan">
+                    <h2>Starter Web</h2>
+                    <p>Perfect for small businesses and startups.</p>
+                    <ul>
+                        <li>10 Pages</li>
+                        <li>Basic SEO</li>
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                    </ul>
+                    <div class="price">&#8377 9,999</div>
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="plan">
+                    <h2>Pro Web Plus</h2>
+                    <p>For growing businesses needing more customization.</p>
+                    <ul>
+                        <li>25 Pages</li>
+                        <li>Advanced SEO</li>
+                        <li>Responsive Design</li>
+                        <li>E-commerce Integration</li>
+                    </ul>
+                    <div class="price">&#8377 24,999</div>
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="plan">
+                    <h2>Enterprise Suite</h2>
+                    <p>Comprehensive solution for large enterprises.</p>
+                    <ul>
+                        <li>Unlimited Pages</li>
+                        <li>Premium SEO</li>
+                        <li>Custom Design</li>
+                        <li>Full E-commerce Integration</li>
+                    </ul>
+                    <div class="price">&#8377 49,999</div>
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <!-- Section 1: Logo and Company Info -->
+                <div class="footer-column logo-section">
+                    <img src="./logo/logo.png" alt="Hontec Logo" class="footer-logo">
+                    <p class="company-description">Pioneering network optimization that improves speed, reduces latency, and congestion – along with full visibility.</p>
+                </div>
+        
+                <!-- Section 2: Product Links -->
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">E commerse</a></li>
+                        <li><a href="#">App Dev</a></li>
+                        <li><a href="#">Web Dev</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Section 3: General Links -->
+                <div class="footer-column">
+                    <h4>General</h4>
+                    <ul>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">What we provide</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Section 4: Social Links -->
+                <div class="footer-column">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Footer Bottom Links -->
+            <div class="footer-bottom">
+                <a href="#">Documentation</a>
+                <a href="#">Privacy & Cookie Policy</a>
+            </div>
+        </footer>
+
+
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
